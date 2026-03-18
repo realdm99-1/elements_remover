@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Settings - Elements Remover</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="options">
+  <h1>Elements Remover Settings</h1>
+  <div class="input-section">
+    <div>
+      <label for="xpathInput">XPath</label>
+      <input type="text" id="xpathInput" placeholder="//div[@class='ad']">
+      <button id="addXpath">Add</button>
+    </div>
+    <div>
+      <label for="classInput">Class ID</label>
+      <input type="text" id="classInput" placeholder=".some-ad-class">
+      <button id="addClass">Add</button>
+    </div>
+    <div>
+      <label for="idInput">Element ID</label>
+      <input type="text" id="idInput" placeholder="#some-ad-id">
+      <button id="addId">Add</button>
+    </div>
+  </div>
+  <hr>
+  <h2>Current Removal Rules</h2>
+  <ul id="ruleList"></ul>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body.popup {
+  width: 200px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+body.options {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+button:hover {
+  background-color: #e1e1e1;
+}
+
+.input-section div {
+  margin-bottom: 10px;
+}
+
+.input-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.input-section input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+}
+
+.input-section button {
+  display: block;
+  width: 100px;
+  margin-bottom: 2px;
+}
+
+.rule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.rule-type {
+  font-weight: bold;
+  color: #555;
+  width: 80px;
+}
+
+.rule-value {
+  flex-grow: 1;
+  word-break: break-all;
+  margin: 0 10px;
+}
+
+.delete-btn {
+  width: auto;
+  padding: 2px 8px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+}
