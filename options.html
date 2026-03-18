@@ -6,27 +6,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="options">
-  <h1>Elements Remover Settings</h1>
-  <div class="input-section">
-    <div>
-      <label for="xpathInput">XPath</label>
-      <input type="text" id="xpathInput" placeholder="//div[@class='ad']">
-      <button id="addXpath">Add</button>
-    </div>
-    <div>
-      <label for="classInput">Class ID</label>
-      <input type="text" id="classInput" placeholder=".some-ad-class">
-      <button id="addClass">Add</button>
-    </div>
-    <div>
-      <label for="idInput">Element ID</label>
-      <input type="text" id="idInput" placeholder="#some-ad-id">
-      <button id="addId">Add</button>
-    </div>
+  <div class="container">
+    <header>
+      <h1>Elements Remover</h1>
+      <p class="subtitle">웹페이지에서 원치 않는 요소를 제거하는 규칙을 관리하세요.</p>
+    </header>
+
+    <section class="card main-form">
+      <h2>새 규칙 추가</h2>
+      <div class="input-grid">
+        <div class="input-group">
+          <label for="xpathInput">XPath</label>
+          <div class="input-row">
+            <input type="text" id="xpathInput" placeholder="예: //div[@class='ad']">
+            <button id="addXpath" class="btn-primary">추가</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="classInput">Class</label>
+          <div class="input-row">
+            <input type="text" id="classInput" placeholder="예: some-ad-class">
+            <button id="addClass" class="btn-primary">추가</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="idInput">ID</label>
+          <div class="input-row">
+            <input type="text" id="idInput" placeholder="예: some-ad-id">
+            <button id="addId" class="btn-primary">추가</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card list-section">
+      <h2>현재 제거 규칙 목록</h2>
+      <div id="emptyState" class="hidden">등록된 규칙이 없습니다.</div>
+      <ul id="ruleList"></ul>
+    </section>
   </div>
-  <hr>
-  <h2>Current Removal Rules</h2>
-  <ul id="ruleList"></ul>
   <script src="options.js"></script>
 </body>
 </html>
