@@ -182,23 +182,30 @@ button {
 
 /* Popup specific styling (if needed) */
 body.popup {
-  width: 250px;
-  padding: 16px;
+  width: 175px;
+  padding: 12px;
+  font-size: 0.85rem;
+}
+
+body.popup h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
 }
 
 .popup .toggle-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 8px;
   background: #f1f5f9;
   border-radius: var(--radius);
-  margin-bottom: 16px;
+  margin-bottom: 11px;
 }
 
 .popup button#openOptions {
   width: 100%;
-  padding: 10px;
+  padding: 7px;
   background: white;
   border: 1px solid var(--border-color);
 }
@@ -212,8 +219,8 @@ body.popup {
 .switch {
   position: relative;
   display: inline-block;
-  width: 44px;
-  height: 24px;
+  width: 31px;
+  height: 17px;
 }
 
 .switch input {
@@ -227,16 +234,16 @@ body.popup {
   cursor: pointer;
   inset: 0;
   background-color: #cbd5e1;
-  border-radius: 24px;
+  border-radius: 17px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
-  left: 3px;
-  bottom: 3px;
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
   border-radius: 50%;
 }
@@ -246,5 +253,5 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(20px);
+  transform: translateX(14px);
 }
